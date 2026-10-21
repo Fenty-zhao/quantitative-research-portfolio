@@ -51,4 +51,4 @@ The detailed case studies are in English.
 
 ## Data & transparency
 
-The portfolio distinguishes **submitted coursework results** from **later independent re-analysis**. Some data are access-controlled and are not published here. The ELSA re-analysis was checked in Python, while its R script remains unverified in an R environment; the ESS9 results have not yet been independently reproduced. I do not claim that the reported associations establish causal effects.
+The portfolio distinguishes **submitted coursework results** from **later independent re-analysis**. Some data are access-controlled and are not published here. The ELSA results were independently re-checked during portfolio preparation, while the prepared R script remains unverified in an R environment; the ESS9 results have not yet been independently reproduced. I do not claim that the reported associations establish causal effects.
