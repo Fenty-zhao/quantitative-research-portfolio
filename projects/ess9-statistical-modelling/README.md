@@ -2,7 +2,7 @@
 
 **Introduction to Statistical Modelling · University of Manchester MSc coursework**
 
-[Portfolio home](../../README.md) · [Part 1: Logistic regression](#part-1--household-income-and-crime-victimisation-in-great-britain) · [Part 2: Multilevel model](#part-2--household-income-and-internet-use-across-countries) · [Research reflection](#research-choices-and-limitations)
+[Portfolio home](../../README.md) · [Part 1: Logistic regression](#part-1--household-income-and-crime-victimisation-in-great-britain) · [Part 2: Multilevel model](#part-2--household-income-and-internet-use-across-countries) · [Model → Results → Interpretation](MODEL_TO_INTERPRETATION.md) · [Research reflection](#research-choices-and-limitations)
 
 ## Project overview
 
@@ -46,13 +46,9 @@ glm(crime_victim ~ hinctnta + agea + gndr +
 
 The household-income confidence interval included 1, so the submitted model did **not** find clear statistical evidence of an adjusted income association. These numbers should not be interpreted as proof that income has no effect.
 
-### A methodological issue worth revisiting
+### Reading the model evidence
 
-The research question and original text framed the goal as a **total causal effect**, while the fitted model was observational and included **`aesfdrk`: perceived safety after dark**. Importantly, that item describes *how safe the respondent feels*, not observed nighttime activity or a measured exposure to crime.
-
-Its causal role is uncertain: perceptions of safety may be influenced by victimisation itself, by neighbourhood factors, or by other experiences. Treating it as a straightforward exposure control could distort the intended total-effect interpretation.
-
-**Portfolio learning:** before interpreting a regression as causal, map the assumed relationships between exposure, outcome and controls. A useful next step would be a revised DAG and sensitivity models with and without this covariate. Those revisions **have not been run here**.
+The [Model → Results → Interpretation walkthrough](MODEL_TO_INTERPRETATION.md) connects the binary-outcome research question, GLM specification, reported odds ratios, confidence intervals and interpretation. It also contrasts this analysis with the multilevel model in Part 2.
 
 ---
 
@@ -92,9 +88,9 @@ The reported country-level random-intercept variance was **1,115**, compared wit
 
 Part 1 estimated a probability-related association through **odds**, whereas Part 2 modelled a continuous outcome and accommodated **country clustering**. This distinction is the central methodological contrast between the two analyses.
 
-### Covariate choice is a causal decision, not just a coding decision
+### Secondary survey data and interpretation
 
-The original assignment used causal language, but neither analysis had an identification strategy sufficient to establish a total causal effect. In particular, Part 1's perceived-safety measure should not be described as actual behaviour or an unambiguous confounder.
+The analysis relied on existing ESS9 measures, which may not fully capture the concepts of interest. The models identify adjusted associations within the observed data; causal effects would require additional identifying assumptions and a suitable design.
 
 ### Check specifications against the substantive question
 
@@ -113,9 +109,9 @@ The original assessment contains R code, but this portfolio **has not independen
 | Binary-outcome modelling | Logistic model and interpretation of odds ratios and confidence intervals |
 | Multilevel modelling | Country random intercept to accommodate clustered ESS9 observations |
 | Statistical communication | Contrasting binary and continuous outcomes and their coefficients |
-| Critical model review | Revisiting variable meaning, confounder assumptions and causal wording |
+| Research interpretation | Distinguishing model-based associations from causal effects, with attention to secondary survey measures |
 | Reproducibility planning | Separating submitted estimates from unverified re-analysis |
 
 **Source:** Submitted *SOST70011 Introduction to Statistical Modelling, Assessment 3* (two analyses and R appendix). This page is a later portfolio presentation of that work, including retrospective methodological reflection.
 
-[← Quantitative portfolio](../../README.md)
+[Model → Results → Interpretation](MODEL_TO_INTERPRETATION.md) · [← Quantitative portfolio](../../README.md)
