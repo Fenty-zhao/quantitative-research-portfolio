@@ -24,7 +24,7 @@ The dataset is an **unbalanced panel**. The re-analysis under the submitted comp
 
 ## Findings and interpretation
 
-An independent Python mixed-model audit found a negative association between organisational participation and loneliness (M2 coefficient approximately **−0.0571** under the submitted coding). The participation-by-time interaction was **not statistically significant** (estimate approximately **−0.00194**, Wald p ≈ 0.539). Reclassifying marital status as a nominal factor produced an interaction estimate of approximately **−0.00215** (Wald p ≈ 0.496). These do **not** establish a causal effect.
+An independent re-check of the mixed-effects models found a negative association between organisational participation and loneliness (M2 coefficient approximately **−0.0571** under the submitted coding). The participation-by-time interaction was **not statistically significant** (estimate approximately **−0.00194**, Wald p ≈ 0.539). Reclassifying marital status as a nominal factor produced an interaction estimate of approximately **−0.00215** (Wald p ≈ 0.496). These do **not** establish a causal effect.
 
 The original final paper reported somewhat different coefficients; these were **not reproduced exactly**. R code has been prepared for independent reproduction, but **was not executed in an R runtime** during the audit. See [audit notes](../../docs/elsa-audit.md) for open issues.
 
@@ -46,7 +46,7 @@ The original final paper reported somewhat different coefficients; these were **
 
 Obtain appropriately licensed ELSA Waves 7–11 `.dta` files via the [UK Data Service](https://ukdataservice.ac.uk/). Do **not** upload these files publicly. Place the five files in a local `data/` folder, using the names specified in the script, and run it from the repository root.
 
-The script generates sample summaries and model outputs in `outputs/`. The outputs should be verified in R and compared to the independent Python audit before reporting final point estimates as R-reproduced results.
+The script generates sample summaries and model outputs in `outputs/`. The outputs should be verified in R and compared to the independent re-check before reporting final point estimates as R-reproduced results.
 
 ## Limitations and open checks
 
