@@ -1,7 +1,8 @@
 # SOST70022 — ELSA Waves 7–11: reproducibility and validation
 # R packages: haven, dplyr, lme4, ggplot2, readr
 # The supplied ELSA data are restricted: NEVER commit raw data.
-# Script prepared for R execution; independently audited results used Python.
+# Script prepared for R execution; later model results were independently re-checked.
+# This R script has not yet been run end-to-end to verify those results.
 # Run from the repository root after placing data files in data/.
 
 library(haven)
