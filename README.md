@@ -45,6 +45,7 @@ The detailed case studies are in English.
 
 ## Other research
 
+- [MSc Dissertation: Online Social Connection and Immigrant Mental Health](https://github.com/Fenty-zhao/immigrant-social-connection-mental-health) — individual fixed-effects panel research on UK immigrant mental health
 - [Qualitative Research Portfolio](https://github.com/Fenty-zhao/qualitative-research-portfolio) — interviewing, coding, thematic analysis and research reflection
 - [Gaming Livestream Community Research](https://github.com/Fenty-zhao/gaming-livestream-community-research) — user behaviour and community research
 
