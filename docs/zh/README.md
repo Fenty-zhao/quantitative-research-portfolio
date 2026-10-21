@@ -6,7 +6,7 @@
 
 ## 作品集简介
 
-本作品集汇集了我在硕士课程中完成的统计研究，重点展示[纵向数据分析](../../projects/elsa-loneliness/README.md)、[Logistic 回归](../../projects/ess9-statistical-modelling/README.md)、[多层模型](../../projects/ess9-statistical-modelling/README.md#part-2--household-income-and-internet-use-across-countries)、[统计结果解释](../../projects/ess9-statistical-modelling/README.md#research-choices-and-limitations)以及[模型设定与数据质量检查](../../docs/elsa-audit.md)等研究能力。这些方法同样可用于以数据和证据支持决策的研究与分析工作。
+本作品集汇集了我在硕士课程中完成的统计研究，重点展示[纵向数据分析](../../projects/elsa-loneliness/README.md)、[Logistic 回归](../../projects/ess9-statistical-modelling/README.md)、[多层模型](../../projects/ess9-statistical-modelling/README.md#part-2--household-income-and-internet-use-across-countries)、[统计结果解释](../../projects/ess9-statistical-modelling/MODEL_TO_INTERPRETATION.md)以及[模型设定与数据质量检查](../../docs/elsa-audit.md)等研究能力。这些方法同样可用于以数据和证据支持决策的研究与分析工作。
 
 ---
 
@@ -39,6 +39,7 @@
 | ELSA 复核记录 | [样本与模型核查 →](../../docs/elsa-audit.md) |
 | ELSA R 脚本 | [待完整运行验证的脚本 →](../../scripts/elsa_reproduce.R) |
 | ESS9 建模研究 | [Logistic 与多层模型 →](../../projects/ess9-statistical-modelling/README.md) |
+| ESS9 模型证据解读 | [模型设定 → 结果 → 解释 →](../../projects/ess9-statistical-modelling/MODEL_TO_INTERPRETATION.md) |
 
 详细研究内容保留英文。
 
