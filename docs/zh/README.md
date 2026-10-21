@@ -45,6 +45,7 @@
 
 ## 其他研究
 
+- [硕士毕业论文：线上社会连接与英国移民心理健康](https://github.com/Fenty-zhao/immigrant-social-connection-mental-health/blob/main/docs/zh/README.md) — 采用个体固定效应的纵向研究
 - [质性研究作品集](https://github.com/Fenty-zhao/qualitative-research-portfolio/blob/main/docs/zh/README.md) — 访谈、编码、主题分析与研究者反思
 - [游戏直播社群用户研究](https://github.com/Fenty-zhao/gaming-livestream-community-research/blob/main/docs/zh/README.md) — 用户行为与社群研究
 
