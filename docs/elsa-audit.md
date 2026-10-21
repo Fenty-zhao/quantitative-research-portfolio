@@ -2,7 +2,7 @@
 
 [← ELSA case study](../projects/elsa-loneliness/README.md) · [R reproduction script](../scripts/elsa_reproduce.R) · [Quantitative portfolio](../README.md)
 
-**Scope:** Submitted SOST70022 final assignment, its R appendix, and the user's supplied five ELSA wave files. The subsequent check was implemented in Python, *not* yet run end-to-end in R. This document is a re-analysis, not a claim that these checks were performed during the original assessment.
+**Scope:** Submitted SOST70022 final assignment, its R appendix, and the user's supplied five ELSA wave files. The results were independently re-checked during portfolio preparation; the prepared R script has *not* been run end-to-end in R. The later checks are separate from the student's submitted analysis and are not claimed as work performed by the student.
 
 ## Sample count discrepancies
 
@@ -17,7 +17,7 @@
 
 Distinct persons under the re-applied complete-case rules: **12,500**, not the **8,259** stated in the submitted narrative. The original flowchart and tables used hard-coded values and need regeneration from one locked sample.
 
-## Mixed-model comparison (independent Python ML audit)
+## Mixed-model comparison (independent re-check using maximum likelihood)
 
 | Quantity | Submitted paper | Re-analysed submitted coding | Marital-status categorical correction |
 | --- | ---: | ---: | ---: |
