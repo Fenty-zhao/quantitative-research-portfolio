@@ -1,30 +1,52 @@
+[**English**](README.md) | [简体中文](docs/zh/README.md)
+
 # Quantitative Research Portfolio
 
 **MSc Social Research Methods and Statistics · University of Manchester**
 
-A collection of coursework-based research projects and subsequent reproducibility reviews, focused on **research questions, analytical decisions, and interpretation before code**.
+## Portfolio statement
 
-**Methods:** Statistical modelling · Longitudinal data analysis · Multilevel modelling · Causal inference · Complex survey methods  
-**Tools:** R · Stata
+This portfolio brings together applied statistical research from my MSc, highlighting [longitudinal data analysis](projects/elsa-loneliness/README.md), [logistic regression](projects/ess9-statistical-modelling/README.md#part-1--household-income-and-crime-victimisation-in-great-britain), [multilevel modelling](projects/ess9-statistical-modelling/README.md#part-2--household-income-and-internet-use-across-countries), [interpretation of model results](projects/ess9-statistical-modelling/README.md#results-reported-in-the-submitted-assignment), and [critical review of modelling decisions](docs/elsa-audit.md). These skills support evidence-led research and data analysis roles.
 
-## Projects
+---
 
-| Project | Core question | Analytical approach | Status |
+## Featured research projects
+
+| Project | Research question | Methods | Evidence status |
 | --- | --- | --- | --- |
-| [Loneliness across five ELSA waves](projects/elsa-loneliness/README.md) | Is organisational participation associated with loneliness, and with its change over time? | Five-wave panel harmonisation; mixed-effects growth models; model validation | **Re-analysis documented; R-runtime verification pending** |
-| Returns to education: identifying causal effects | Why might IV, DiD and RDD studies estimate different effects? | Identification assumptions, DAG and critical appraisal of published research | To be curated |
-| Complex survey analysis | How do stratification, clustering and survey weights affect statistical inference? | Survey-design and model-based analysis in Stata | To be curated |
+| [Social participation and loneliness across ELSA Waves 7–11](projects/elsa-loneliness/README.md) | How does organisational participation relate to loneliness levels and changes over time? | Longitudinal data preparation; mixed-effects growth models | Coursework re-analysis documented; R script **not yet executed** |
+| [ESS9: Income, crime victimisation and internet use](projects/ess9-statistical-modelling/README.md) | How is income associated with crime victimisation in Great Britain and internet use across countries? | Binary logistic regression; country random-intercept model | **Submitted coursework estimates**; not independently rerun |
 
-The [MSc dissertation](https://github.com/Fenty-zhao) on online social connection and immigrant mental health is planned as a **separate repository**, rather than being blended with shorter coursework studies.
+---
 
-## How to read a project
+## Research skills & evidence
 
-Each case begins with the research question and analytical reasoning, followed by the dataset, modelling decisions, findings, limitations, and reproducible scripts where available. An assignment brief is not treated as evidence of completed analysis. Where a project is re-analysed after submission, original findings and later validation are distinguished.
+| Research skill | What I did | Evidence |
+| --- | --- | --- |
+| **Longitudinal data analysis** | Harmonised five survey waves, examined repeated observations and modelled variation in loneliness over time. | [ELSA research process →](projects/elsa-loneliness/README.md#analytical-reasoning--question-first-technique-second) |
+| **Regression modelling** | Used binary logistic regression for crime victimisation and interpreted odds ratios with confidence intervals. | [ESS9 logistic model →](projects/ess9-statistical-modelling/README.md#part-1--household-income-and-crime-victimisation-in-great-britain) |
+| **Multilevel modelling** | Modelled country-level variation in internet use and individual-level predictors, alongside longitudinal random-effects models. | [ESS9 multilevel model →](projects/ess9-statistical-modelling/README.md#part-2--household-income-and-internet-use-across-countries) · [ELSA models →](projects/elsa-loneliness/README.md) |
+| **Statistical interpretation** | Explained model coefficients, time interactions and the distinction between association and causal effects. | [ESS9 findings →](projects/ess9-statistical-modelling/README.md#research-choices-and-limitations) · [ELSA findings →](projects/elsa-loneliness/README.md#findings-and-interpretation) |
+| **Model checking & research transparency** | Reviewed sample denominators, variable coding and differences between submitted and independently checked results. | [ELSA audit →](docs/elsa-audit.md) · [ESS9 limitations →](projects/ess9-statistical-modelling/README.md#research-choices-and-limitations) |
 
-## Data and research integrity
+---
 
-Some source datasets (including ELSA) are subject to access terms and **are not committed to this repository**. Reproduction scripts explain how authorised users can acquire and load them. The ELSA validation uses Python-based independent checks; the R script itself still needs an R-runtime verification.
+## Explore the research
+
+| Section | Read |
+| --- | --- |
+| ELSA longitudinal case study | [Research design, modelling and findings →](projects/elsa-loneliness/README.md) |
+| ELSA independent audit | [Sample checks and open issues →](docs/elsa-audit.md) |
+| ELSA R script | [Prepared reproduction script →](scripts/elsa_reproduce.R) |
+| ESS9 modelling case study | [Logistic and multilevel models →](projects/ess9-statistical-modelling/README.md) |
+
+The detailed case studies are in English.
 
 ## Other research
 
-[Gaming Livestream Community Research](https://github.com/Fenty-zhao/gaming-livestream-community-research) — qualitative user-behaviour research. Additional qualitative coursework will be evaluated separately.
+- [Qualitative Research Portfolio](https://github.com/Fenty-zhao/qualitative-research-portfolio) — interviewing, coding, thematic analysis and research reflection
+- [Gaming Livestream Community Research](https://github.com/Fenty-zhao/gaming-livestream-community-research) — user behaviour and community research
+
+## Data & transparency
+
+The portfolio distinguishes **submitted coursework results** from **later independent re-analysis**. Some data are access-controlled and are not published here. The ELSA re-analysis was checked in Python, while its R script remains unverified in an R environment; the ESS9 results have not yet been independently reproduced. I do not claim that the reported associations establish causal effects.
