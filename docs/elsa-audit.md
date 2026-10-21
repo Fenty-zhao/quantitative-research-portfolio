@@ -1,5 +1,7 @@
 # ELSA longitudinal modelling — independent audit
 
+[← ELSA case study](../projects/elsa-loneliness/README.md) · [R reproduction script](../scripts/elsa_reproduce.R) · [Quantitative portfolio](../README.md)
+
 **Scope:** Submitted SOST70022 final assignment, its R appendix, and the user's supplied five ELSA wave files. The subsequent check was implemented in Python, *not* yet run end-to-end in R. This document is a re-analysis, not a claim that these checks were performed during the original assessment.
 
 ## Sample count discrepancies
